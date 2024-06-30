@@ -1,0 +1,18 @@
+<div class="row mt-5">
+
+  {{#each Notesdoc}}
+
+    <div class="col-sm-6 col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">{{this.title}}</h5>
+          <p class="card-text">{{this.notes}}</p>
+          {{!-- <a href="#" class="btn btn-danger">Delete</a> --}}
+          <input type="submit" value="Delete" class="btn btn-danger" id="delbtn"                user-id="{{this._id}}">
+        </div>
+      </div>
+    </div>
+
+  {{/each}}
+
+</div>
