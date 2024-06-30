@@ -82,7 +82,7 @@ app.post("/login",async(req,res)=>{
             res.redirect(`/index?id=${dbemail._id}`);
         }
     } catch (error) {
-     res.send(error);   
+     res.send(error); 
     }
 })
 
